@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Instagram Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="title">
+                <h1>Kilogram.</h1>
+            </div>
+            <div class="items">
+                <button id="addBtn"><i class="fa fa-plus"></i></button>
+                <img src="https://sketchok.com/images/articles/06-anime/002-one-piece/26/16.jpg" class="profile">
+            </div>
+        </header>
+            <div class="module-container" id="module">
+                <div class="module-inputs">
+                    <label>Image URL:</label>
+                    <input type="text" id="input-image-el" class="input">
+                </div>
+                <div class="module-inputs">
+                    <label>Location:</label>
+                    <input type="text" id="input-location-el" class="input">
+                </div>
+                <div class="module-inputs">
+                    <label>Caption:</label>
+                    <input type="text" id="input-caption-el">
+                </div>
+                <div class="module-btn">
+                    <button id="post-btn">POST</button>
+                    <button id="delete-btn">CANCEL</button>
+                </div>
+            </div>
+        <main>
+            <div class="main-container">
+            </div>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

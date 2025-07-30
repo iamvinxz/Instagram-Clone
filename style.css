@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body{
+    overflow-x: hidden;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffffbe;
+}
+
+header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 auto;
+   height: 50px;
+   width: 500px;
+   background-color: #fff;
+   border-radius: 10px;
+   padding: 20px 10px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.module-container{
+    display: none;
+    background-color: #fff;
+    width: 600px;
+    height: 250px;
+    border-radius: 10px;
+    padding: 20px 20px;
+    position: absolute;
+    right: 376px;
+    top: 200px;
+    box-shadow: 0px 1px 5px rgb(95, 95, 95);
+    z-index: 5;
+    
+}
+
+.input, #input-caption-el{
+    border: 1px solid #303030;
+    outline: none;
+    width: 100%;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+#post-btn{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #303030;
+    color: #fff;
+    margin-top: 10px;
+    width: 150px;
+    margin-left: 30px;
+}
+
+#delete-btn{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #303030;
+    color: #fff;
+    width: 150px;
+    position: relative;
+    left: 190px;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile{
+    border-radius: 50%;
+    width: 40px;
+    border: 1px solid rgb(79, 198, 245);
+}
+
+#addBtn{
+    cursor: pointer;
+    background-color: rgb(241, 241, 241);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    font-size: 26px;
+    text-align: center;
+    border: none;
+}
+
+.fa-plus{   
+    font-size: 15px;
+    position: relative;
+    top:-4px;
+}
+
+.title h1{
+
+}
+
+.title-post{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.title-post .profile{
+    margin-right: 10px;
+    width: 50px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card{
+    border: none;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px 10px;
+    box-shadow: 0px 1px 5px rgb(95, 95, 95);
+    max-width: 500px;
+    width: 500px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.post-image{
+    position: relative;
+    left: 15px;
+    border-radius: 10px;
+}
+
+.post-items i{
+    margin-top: 10px;
+    margin-left: 3px;
+}
+
+.comment-post{
+    display: flex;
+    padding-left: 20px;
+}
+
+#caption-el{
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+
+
