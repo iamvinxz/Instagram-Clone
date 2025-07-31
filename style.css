@@ -30,19 +30,33 @@ header{
    margin-bottom: 10px;
 }
 
+.module{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.module.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
 .module-container{
-    display: none;
     background-color: #fff;
     width: 600px;
     height: 250px;
     border-radius: 10px;
     padding: 20px 20px;
-    position: absolute;
-    right: 376px;
-    top: 200px;
     box-shadow: 0px 1px 5px rgb(95, 95, 95);
-    z-index: 5;
-    
 }
 
 .input, #input-caption-el{
@@ -64,7 +78,7 @@ header{
     margin-left: 30px;
 }
 
-#delete-btn{
+#cancel-btn{
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -84,7 +98,7 @@ header{
 .profile{
     border-radius: 50%;
     width: 40px;
-    border: 1px solid rgb(79, 198, 245);
+    border: 1px solid  #cc2367bb;
 }
 
 #addBtn{
@@ -105,13 +119,20 @@ header{
 }
 
 .title h1{
-
+    color: #F09432; 
+    background-image: linear-gradient(45deg, #F09432 , #E6693C 25%, #DB2742 51%, #CC2366 76%, #622f5c 100%); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
 }
 
 .title-post{
     display: flex;
     gap: 5px;
     margin-bottom: 10px;
+    margin-top: 5px;
+    position: relative;
+    left: 10px;
 }
 
 .title-post .profile{
@@ -148,6 +169,11 @@ header{
     margin-left: 3px;
 }
 
+.post-items{
+    margin: 5px 0px;
+    margin-left: 10px;
+}
+
 .comment-post{
     display: flex;
     padding-left: 20px;
@@ -155,8 +181,67 @@ header{
 
 #caption-el{
     padding-left: 20px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+#location{
+    font-size: 13px;
+}
+
+.fa-location-dot{
+    font-size: 13px;
+    color: #004f8f;
+}
+
+#post_name{
     font-size: 15px;
 }
 
+#caption-name{
+    font-weight: 500;
+    font-size: 12px;
+    margin-right: 10px;
+}
 
+.fa-earth-americas{
+    position: relative;
+    top:3px;
+    color:#373f46
+}
+
+.menu-btn{
+    position: relative;
+    left: 278px;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.menu{
+  background-color: #fff;
+  position: absolute;
+  width: 50px;
+  right: 50px;
+  top: 10px;
+  box-shadow: 0px 1px 5px rgb(95, 95, 95);
+  border-radius: 5px;
+  z-index: 1;
+  text-align: center;
+  display: none;
+}
+
+.menu button{
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.menu i{
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    right: 8px;
+}
 
