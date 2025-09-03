@@ -91,7 +91,6 @@ function renderPost(){
                 </div>`
             postHTML.push(el);
     }
-    //console.log(postHTML)
     postCards.innerHTML = postHTML.join();
 }
 
@@ -135,7 +134,6 @@ document.getElementById('post-btn').addEventListener("click", function(){
             icon: "success"
         });
         document.querySelector('.module').classList.remove('show');
-        //console.log(posts);
     }
 })
 
@@ -143,20 +141,15 @@ document.getElementById('cancel-btn').addEventListener('click',function(){
     document.querySelector('.module').classList.remove('show');
 })
 
-function showModal(id) {
-    console.log("id")   
- 
+function showModal(id) {   
     document.getElementById(id).style.display = "block";
 }
 
-
 function deletePost(id) {
     console.log("id")   
-
     const filteredPost = posts.filter((post) => post.id != id) 
     posts = filteredPost
     renderPost();
-    // re-render
 }
 
 document.getElementById('edit-btn').addEventListener('click',function(){
